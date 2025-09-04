@@ -11,6 +11,6 @@ It allows users to upload an image and remove the background either by **brush m
 - 💾 Download processed images as PNG
 
 ## 🌐 Live Demo
-👉 [Your Deployed Link Here](https://your-username.github.io/background-removal-tool/)
+👉 [Background Removal Tool](https://fsyz9819.github.io/background-removal-tool/)
 
 ## 📂 Project Structure
