@@ -813,12 +813,11 @@
             }
 
             setupDownload() {
-                this.outputCanvas.toBlob((blob) => {
-                    const url = URL.createObjectURL(blob);
-                    this.downloadBtn.href = url;
-                    this.downloadBtn.download = 'background-removed.png';
-                    this.downloadBtn.style.display = 'flex';
-                }, 'image/png');
+                const dataUrl = this.outputCanvas.toDataURL('image/png');
+                sessionStorage.setItem('downloadImageData', dataUrl);
+                this.downloadBtn.href = 'download.html';
+                this.downloadBtn.removeAttribute('download'); // Ensure it navigates instead of downloading
+                this.downloadBtn.style.display = 'flex';
             }
 
             saveHistory() {
